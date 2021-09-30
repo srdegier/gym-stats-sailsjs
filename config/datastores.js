@@ -62,12 +62,12 @@
 module.exports.datastores = {
   default: {
     //adapter: require('sails-mysql'),
-    url: 'mysql://root:squ1ddy@localhost:3306/gym-stats',
+    //url: 'mysql://root:squ1ddy@localhost:3306/gym-stats',
     adapter: require('sails-mysql'),
     host: 'localhost',
     port: 3306,
     user: 'root',
-    password: 'g3tInCr4zee&stUfF',
+    password: '',
     database: 'gym-stats'
   },
   
