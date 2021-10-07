@@ -9,11 +9,22 @@ module.exports = {
 
   attributes: {
 
-    name: { type: 'string', required: true, },
-    price: { type: 'string', required: true, },
-    category: { type: 'string', required: true, },
-    author: { type: 'string', },
-    description: { type: 'string', },
+    name: { 
+      type: 'string', required: true, 
+    },
+    email: { 
+      type: 'string',
+      required: true,
+      unique: true,
+      isEmail: true,
+      maxLength: 200,
+    },
+    password: { 
+      type: 'string', required: true, 
+    },
+    role: {
+      type: 'string', required: false,
+    },
 
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
