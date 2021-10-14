@@ -6,41 +6,42 @@
  */
 
 module.exports = {
-
+  tableName: 'user',
   attributes: {
 
     name: { 
-      type: 'string', required: true, 
+      type: 'string', 
+      required: true,
     },
     email: { 
       type: 'string',
       required: true,
       unique: true,
       isEmail: true,
-      maxLength: 200,
+      //maxLength: 50,
     },
     password: { 
-      type: 'string', required: true, 
+      type: 'number',
+      // type: 'string', 
+      required: true, 
     },
-    role: {
-      type: 'string', required: false,
-    },
-
-    //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
-    //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
-    //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
-
-
-    //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
-    //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
-    //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
-
-
-    //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
-    //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
-    //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
+    // role: {
+    //   type: 'string', required: false,
+    // },
 
   },
+  // validationMessages: {
+  //   name: {
+  //     required: "Who adds a product without a name? SMH.",
+  //     maxLength: "makker wtf",
+  //   },
+  //   email: {
+  //     required: "Seriously? Wanna donate this product or what?",
+  //   },
+  //   password: {
+  //     required: "Only black and yellow labels are allowed bro!",
+  //   }
+  // },
 
 };
 
